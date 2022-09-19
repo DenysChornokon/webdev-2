@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/31090c8cf3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,93 +15,104 @@
         <div>
             <img src="./img/myPhoto.jpg" alt="My photo" width="150" height="200">
         </div>
-        <!-- Under pic -->
-        <aside>
-            <h3>Senior Accountant</h3>
-            <p>denyschornokon3@gmail.com</p>
-            <p>0663509157</p>
-            <p>Bila Tserkva, Kyiv region, Ukraine</p>
-        </aside>
+
         <!-- Profile -->
-        <div>
+        <div class="main">
             <h1>Denys Chornokon</h1>
-            <h2>Profile</h2>
-            <p>CPA-certified senior accountant with 5 years of experience in financial analysis and consultancy.
-                Coordinated end of the month closing procedures under accordance with GAAP. At SmartFinance Co.
-                implemented quality assurance procedures for accounts payable that resulted in saving $10.000 in a year.
-                Looking to bring my general accounting
-                expertize and experience in managing complex asset accounts to the financial department of ProFinace.
-            </p>
+            <div class="grey-background">
+                <h2>Profile</h2>
+                <p>CPA-certified senior accountant with 5 years of experience in financial analysis and consultancy.
+                    Coordinated end of the month closing procedures under accordance with GAAP. At SmartFinance Co.
+                    implemented quality assurance procedures for accounts payable that resulted in saving $10.000 in a
+                    year.
+                    
+                </p>
+            </div>
         </div>
+
+        <!-- Under pic -->
+        <div class="side-column">
+            <div>
+                <h3>Senior Accountant</h3>
+                <p>denyschornokon3@gmail.com</p>
+                <p>0663509157</p>
+                <p>Bila Tserkva, Kyiv region, Ukraine</p>
+            </div>
+        </div>
+
     </header>
     <hr>
-    <aside>
-        <!-- Column somewhere -->
-        <section>
-            <!-- skills -->
-            <h3>Skills</h3>
-            <h5>Mathematics.................5/5</h5>
-            <h5>Oracle............................5/5</h5>
-            <h5>Time management........4/5</h5>
-            <h5>Leadership.....................4/5</h5>
-        </section>
-        <section>
-            <!-- references -->
-            <h3>References</h3>
-            <div>
-                <h5>Joe Green, Sales Manager from ABC Company</h5>
-                <p>joe.green@gmail.com</p>
-                <p>(111) 222-3333</p>
-            </div>
-            <div>
-                <h5>Sarah Asher, Sales Associate from ABC Company</h5>
-                <p>sarahasher@gmail.com</p>
-                <p>(222) 333-4444</p>
-            </div>
-            <div>
-                <h5>John Smith, Professor from University of Washington</h5>
-                <p>john.smith@uw.edu</p>
-                <p>(333) 444-5555</p>
-            </div>
-        </section>
+    <div class="container">
+        
+        <div class="main">
+            <!-- Column 2 -->
+            <section class="column-2">
+                <div>
+                    <h2>Employment History</h2>
+                    <h4>Senior Accountant, SmartFinance Co., Garden City, NY</h4>
+                    <p>04/2017-04/2022</p>
+                    <ul>
+                        <li>Coordinated the full month end procedure, including preparation of balance sheets, income
+                            statements, and trial balance statements.</li>
+                        <li>Performed SOX audit for compliance with legal regulations.</li>
+                        <li>Prepared reconciliations for monthly closings.</li>
+                        <li>Ensured accuracy of revenue and expense accounts.</li>
+                        <li>Provided weekly quality checks of documents.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Accountant and Finance Advisor, Blue Solutions, Garden City, NY</h4>
 
-    </aside>
-    <div>
-        <!-- Column 2 -->
-        <section>
-            <div>
-                <h2>Employment History</h2>
-                <h4>Senior Accountant, SmartFinance Co., Garden City, NY</h4>
-                <p>04/2017-04/2022</p>
-                <ul>
-                    <li>Coordinated the full month end procedure, including preparation of balance sheets, income
-                        statements, and trial balance statements.</li>
-                    <li>Performed SOX audit for compliance with legal regulations.</li>
-                    <li>Prepared reconciliations for monthly closings.</li>
-                    <li>Ensured accuracy of revenue and expense accounts.</li>
-                    <li>Provided weekly quality checks of documents.</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Accountant and Finance Advisor, Blue Solutions, Garden City, NY</h4>
+                    <p>06/2014-04/2017</p>
+                    <ul>
+                        <li>Prepared general ledger and journal entries analysis.</li>
+                        <li>Supervised junior accountants and monitored their work daily.</li>
+                        <li>Assisted junior accountants in preparing month end reports and monthly bank reconciliations.
+                        </li>
+                        <li>Filed SEC reports and forms.</li>
+                        <li>Cooperated with internal and external auditors.</li>
+                    </ul>
+                </div>
 
-                <p>06/2014-04/2017</p>
-                <ul>
-                    <li>Prepared general ledger and journal entries analysis.</li>
-                    <li>Supervised junior accountants and monitored their work daily.</li>
-                    <li>Assisted junior accountants in preparing month end reports and monthly bank reconciliations.
-                    </li>
-                    <li>Filed SEC reports and forms.</li>
-                    <li>Cooperated with internal and external auditors.</li>
-                </ul>
-            </div>
+            </section>
+            <section class="column-2">
+                <h3>Education</h3>
+                <h4>University of Buffalo, Buffalo, NY</h4>
+                <p> 09/2007-04/2014 </p>
+            </section>
+        </div>
 
-        </section>
-        <section>
-            <h3>Education</h3>
-            <h5>University of Buffalo, Buffalo, NY</h5>
-            <p> 09/2007-04/2014 </p>
-        </section>
+        <aside class="side-column">
+            <!-- Column somewhere -->
+            <section class="grey-background">
+                <!-- skills -->
+                <h3>Skills</h3>
+                <h5>Mathematics.................5/5</h5>
+                <h5>Oracle............................5/5</h5>
+                <h5>Time management........4/5</h5>
+                <h5>Leadership.....................4/5</h5>
+            </section>
+            <section class="grey-background">
+                <!-- references -->
+                <h3>References</h3>
+                <div>
+                    <h5>Joe Green, Sales Manager from ABC Company</h5>
+                    <p>joe.green@gmail.com</p>
+                    <p>(111) 222-3333</p>
+                </div>
+                <div>
+                    <h5>Sarah Asher, Sales Associate from ABC Company</h5>
+                    <p>sarahasher@gmail.com</p>
+                    <p>(222) 333-4444</p>
+                </div>
+                <div>
+                    <h5>John Smith, Professor from University of Washington</h5>
+                    <p>john.smith@uw.edu</p>
+                    <p>(333) 444-5555</p>
+                </div>
+            </section>
+
+        </aside>
     </div>
     <footer>
         <h3>Feedback</h3>
