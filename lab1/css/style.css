@@ -3,6 +3,7 @@
     line-height: 1.6em;
     margin: 0 auto;
     padding: 0;
+    max-width: 1000px;
 }
 
 
@@ -12,13 +13,25 @@ header, .container{
 }
 
 .side-column{
-    flex: 1 2 200px;
-    
+    flex: 1 2 200px;  
 }
+
 
 .main{
     flex: 3 1 600px;
-    
+}
+
+.side-column-2{
+    flex: 1 2 300px;
+}
+
+.main-2{
+    flex: 3 1 500px;
+}
+
+#under-pic{
+    font-size: small;
+    margin-left: 10px;
 }
 
 .main h1{
@@ -30,10 +43,11 @@ header, .container{
 
 
 img{
-    padding: 15px;
+    margin-left: 10px;
     margin-top: 4px;
-    height: 212px;
-    width: 160px;
+    height: 110px;
+    width: 90px;
+    border: solid 1px gray;
 }
 
 .grey-background{
@@ -44,6 +58,11 @@ img{
     
 }
 
+.grey-background h5{
+    font: bold;
+    font-size: 14px;
+}
+
 .column-2{
     padding: 20px;
 }
@@ -51,9 +70,19 @@ img{
 .column-2 h4{
     background-color: rgb(49, 49, 49);
     color: rgba(255, 255, 255, 0.87);
+    margin: 10px 0;
+    padding: 0 10px;
 }
 
+
 .side-column{
-    border: solid 1px red;
     padding: 0;
+}
+
+.side-column-2{
+    margin-top: 15px;
+}
+
+.list{
+    margin: 10px 35px;
 }
