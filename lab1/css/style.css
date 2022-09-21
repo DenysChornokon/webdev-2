@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
     margin: 0 auto;
@@ -7,34 +7,35 @@
 }
 
 
-header, .container{
+header,
+.container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.side-column{
-    flex: 1 2 200px;  
+.side-column {
+    flex: 1 2 200px;
 }
 
 
-.main{
+.main {
     flex: 3 1 600px;
 }
 
-.side-column-2{
+.side-column-2 {
     flex: 1 2 300px;
 }
 
-.main-2{
+.main-2 {
     flex: 3 1 500px;
 }
 
-#under-pic{
+#under-pic {
     font-size: small;
     margin-left: 15px;
 }
 
-.main h1{
+.main h1 {
     margin-left: 15px;
     font-size: 40px;
 }
@@ -42,7 +43,7 @@ header, .container{
 
 
 
-img{
+img {
     margin-left: 15px;
     margin-top: 4px;
     height: 110px;
@@ -50,24 +51,24 @@ img{
     border: solid 1px gray;
 }
 
-.grey-background{
+.grey-background {
     background-color: rgb(230, 230, 230);
     padding: 5px;
     margin: 15px;
     border-radius: 15px;
-    
+
 }
 
-.grey-background h5{
+.grey-background h5 {
     font: bold;
     font-size: 14px;
 }
 
-.column-2{
+.column-2 {
     padding: 20px;
 }
 
-.column-2 h4{
+.column-2 h4 {
     background-color: rgb(49, 49, 49);
     color: rgba(255, 255, 255, 0.87);
     margin: 10px 0;
@@ -75,14 +76,38 @@ img{
 }
 
 
-.side-column{
+.side-column {
     padding: 0;
 }
 
-.side-column-2{
+.side-column-2 {
     margin-top: 15px;
 }
 
-.list{
+.list {
     margin: 10px 35px;
 }
+
+.footer {
+    border: 1px solid red;
+    margin: 20px;
+}
+
+.button {
+    background-color: rgb(49, 49, 49);
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 5px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    font: bold;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: white;
+    color: rgb(49, 49, 49);
+    
+} 
