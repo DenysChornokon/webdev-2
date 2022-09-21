@@ -27,6 +27,8 @@
             </div>
         </div>
 
+        
+
         <!-- Profile -->
         <div class="main">
             <h1>Denys Chornokon</h1>
@@ -81,7 +83,9 @@
                 <h4>University of Buffalo, Buffalo, NY</h4>
                 <p> 09/2007-04/2014 </p>
             </section>
+
         </div>
+        
 
         <aside class="side-column-2">
             <!-- Column somewhere -->
@@ -121,15 +125,22 @@
     <footer class="footer">
         <h2>Feedback</h2>
 
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+        <form class="my-form">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
 
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
 
-            <label for="fback">Reach me here:</label><br>
-            <textarea name="fback" rows="4" cols="50"></textarea><br><br>
+
+            <div class="form-group">
+                <label for="fback">Message:</label><br>
+                <textarea name="fback" rows="4" cols="50"></textarea>
+            </div>
 
             <button class="button" type="button">Submit!</button>
 
@@ -137,8 +148,10 @@
         <br>
 
 
-        <div><a href="./template.html" target="_blank">Go to template</a></div>
-        <br>
+        <div id="to-temp">
+            <a class="button" href="./template.html" target="_blank">Go to template</a>
+        </div>
+        <br><br>
         <div>
             &copy; 2022
         </div>

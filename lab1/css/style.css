@@ -89,25 +89,44 @@ img {
 }
 
 .footer {
-    border: 1px solid red;
     margin: 20px;
 }
 
 .button {
     background-color: rgb(49, 49, 49);
     border: 2px solid rgb(49, 49, 49);
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
-    padding: 8px 40px;
+    padding: 3px 10px;
     text-align: center;
     letter-spacing: 1px;
     font: bold;
     font-size: 14px;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
 
-.button:hover{
+.button:hover {
     background-color: white;
     color: rgb(49, 49, 49);
-    
-} 
+}
+
+.button:active{
+    background-color: rgb(49, 49, 49);
+}
+
+
+.my-form input[type="text"],
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.form-group {
+    margin: 15px 0;
+    /* border: 1px solid red; */
+}
+
+#to-temp {
+    float: right;
+}
