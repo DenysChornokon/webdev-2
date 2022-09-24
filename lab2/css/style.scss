@@ -1,54 +1,135 @@
-@import 'utilities';
-@import 'config';
-@import 'mobile';
+@import "config";
+@import "utilities";
 
-* {
-    // box-sizing: border-box;
+
+
+
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.header {
-
-    background-color: $primary-color;
-    padding: 30px 0;
-
-
-    .header-and-list{
-
-        display: flex;
-        justify-content: space-around;
-        margin: 10px 0;
-
-        ul {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-        }
-
-        li {
-            padding: 5px;
-
-        }
-    }
+body {
+    background-color: $light-color;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
 
 }
 
+img {
+    width: 100%;
+}
 
-// .first-part{
-//     display: flex;
-//     justify-content: space-between;
-//     margin: 50px 0;
+// _________________________
 
-//     .side-article{
+
+.header-and-list{
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid red;
+
+    h1 {
+        padding: 14px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    li {
+        padding: 15px;
+    }
+}
+
+// ___________________________________
+
+.first-part {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 0 0 0;
+    
+
+    .side-article {
+        flex: 30%;
+        text-align: left;
+
+
+        p {
+            padding: 20px 0;
+            
+        }
         
-//         padding: 0 20px;
-//     }
+    }
 
-//     img {
+    .side-image {
+        flex: 50%;
 
-//         width: 100%;
-//         padding: 0 20px;
-//         border: 1px solid red;
-//     }
-// }
+        img {
+            padding: 25px 0 0 15px;
+        }
+    }
+}
+
+// _______________________________________
+
+.history {
+    text-align: left;
+    padding: 0 0 50px 0;
+
+    h2 {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+.second-part {
+
+
+    #design {
+        text-align: left;
+        background-color: $primary-color;
+
+        h2{
+            padding: 10px 0 5px 170px;
+        }
+
+        p {
+            width: 56%;
+        }
+
+        padding: 20px 0;
+
+    }
+
+    img {
+        width: 70%;
+        margin-left: 250px;
+    }
+}
+
+
+.side {
+    text-align: left;
+    padding: 20px 0;
+    background-color: $primary-color;
+
+    p {
+        width: 70%;
+    }
+}
+
+.side-r{
+    margin: 0 0 0 250px ;
+    width: 70%;
+}
+
+#protection {
+    // border: 1px solid red;
+    background-color: $secondary-color;
+}
