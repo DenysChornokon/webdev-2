@@ -1,0 +1,54 @@
+@import 'utilities';
+@import 'config';
+@import 'mobile';
+
+* {
+    // box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+
+    background-color: $primary-color;
+    padding: 30px 0;
+
+
+    .header-and-list{
+
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+
+        li {
+            padding: 5px;
+
+        }
+    }
+
+}
+
+
+.first-part{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    .side-article{
+        
+        padding: 0 20px;
+    }
+
+    img {
+
+        width: 100%;
+        padding: 0 20px;
+        border: 1px solid red;
+    }
+}
