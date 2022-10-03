@@ -22,8 +22,6 @@ $secondary-color: #f4f4f4;
     .side {
         width: 150%;
         
-        // text-align: center;
-        
         p {
             padding-right: 30px;
             width: 100%;
@@ -33,4 +31,21 @@ $secondary-color: #f4f4f4;
 
    
 
+}
+
+@media(max-width: 500px) {
+
+    html{
+        font-size: 80%;
+    }
+
+    .navigation ul{
+        flex-direction: column; 
+    }
+
+    .acticle {
+        img {
+            width: 80%;
+        }
+    }
 }
