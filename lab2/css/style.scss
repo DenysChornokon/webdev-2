@@ -9,7 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    transition: all .2s linear;
 }
 
 body {
@@ -47,13 +47,16 @@ img {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
-        
     }
 
     li {
         padding: 15px;
         text-align: center;
     }
+}
+
+.navigation li:hover {
+    letter-spacing: .1rem;
 }
 
 // ___________________________________
