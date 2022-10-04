@@ -1,0 +1,93 @@
+@import "utilities";
+@import "config";
+
+
+
+body {
+    color: $textColor;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: .5s linear;
+    background-color: $textColor;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+
+
+    a {
+        padding: 8px 17px;
+        color: $bgColor;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    a:hover {
+        background: $primaryColor;
+        border-radius: 0.2rem;
+        transition: .2s all linear;
+    }
+
+}
+
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icon .fa-solid {
+    color: $bgColor;
+}
+
+.header-icon .fa-solid:hover {
+    color: $primaryColor;
+}
+
+#menu-icon {
+    color: $bgColor;
+    font-size: 24px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.search-box {
+    position: absolute;
+    top: 100%; left: 50%;
+    transform: translate(-50%);
+    background: $bgColor;
+    width: 100%;
+
+
+    input {
+        padding: 20px;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 1rem;
+        color: $primaryColor;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
