@@ -187,12 +187,13 @@ header .follow a:hover{
 
 
 .home .image img{
-    width:100%;
+    width:50%;
 }
 
 
 .home .content{
     flex:1 1 40rem;
+    width: 70%;
 }
 
 

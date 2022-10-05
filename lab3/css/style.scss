@@ -7,6 +7,10 @@ body {
     color: $textColor;
 }
 
+section {
+    padding: 50px 100px;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -71,7 +75,7 @@ header {
 
 .search-box {
     position: absolute;
-    top: 100%; left: 50%;
+    top: -100%; left: 50%;
     transform: translate(-50%);
     background: $bgColor;
     width: 100%;
@@ -89,5 +93,122 @@ header {
     input::placeholder {
         font-size: 1rem;
         font-weight: 500;
+    }
+}
+
+.search-box.active {
+    top: 110%;
+    box-shadow: $box-shadow;
+    transition: .2s all linear;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/Ukraine.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-text {
+
+    h1 {
+        font-size: 3.4rem;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 0.938rem;
+        color: $bgColor;
+        margin: 0.5rem 0 1.4rem;
+    }
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: $primaryColor;
+    color: $bgColor;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #8a6f4d;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.about-img img{
+    border-radius: 0.5rem;
+}
+
+.about-text {
+    
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 0.938rem;
+        margin: 0.5rem 0 1.1rem;
+    }
+}
+
+.heading {
+    text-align: center;
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    box {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0.5rem;
+        box-shadow: $box-shadow;
+
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        object-position: center;
+        padding: 20px;
+        background: #f1f1f1;
+        border-radius: 0.5rem;
+
+    }
+}
+
+.products-container .box h3 {
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 1px red solid;
     }
 }
