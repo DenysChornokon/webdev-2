@@ -14,18 +14,23 @@ section {
 header {
     position: fixed;
     width: 100%;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 100px;
     transition: .5s linear;
-    background-color: $textColor;
+}
+
+header.shadow{
+    background: $textColor;
+    box-shadow: $box-shadow;
 }
 
 .logo img {
-    width: 60px;
+    width: 100px;
 }
 
 .navbar {
@@ -75,7 +80,8 @@ header {
 
 .search-box {
     position: absolute;
-    top: -100%; left: 50%;
+    top: -100%;
+    left: 50%;
     transform: translate(-50%);
     background: $bgColor;
     width: 100%;
@@ -149,12 +155,12 @@ header {
     gap: 1.5rem;
 }
 
-.about-img img{
+.about-img img {
     border-radius: 0.5rem;
 }
 
 .about-text {
-    
+
     h2 {
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -181,7 +187,7 @@ header {
     gap: 1.5rem;
     margin-top: 2rem;
 
-    box {
+    .box {
         position: relative;
         padding: 10px;
         display: flex;
@@ -213,10 +219,124 @@ header {
     }
 }
 
+.donators-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .box {
+        padding: 20px;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        text-align: center;
+
+        p {
+            font-size: 0.938rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: .5rem 0 .5rem;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .box:hover {
+        background: $secondColor;
+        transition: .2s all linear;
+    }
+}
+
+.stars .fa-solid {
+    color: $primaryColor;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+
+.footer-box {
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: .938rem;
+        margin-bottom: 10px;
+    }
+
+    li a {
+        color: $textColor;
+    }
+
+    li a:hover {
+        color: $primaryColor;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+
+    a .fa-brands {
+        font-size: 24px;
+        color: $textColor;
+        padding: 10px;
+        background: $secondColor;
+        border-radius: .2rem;
+    }
+
+    a .fa-brands:hover {
+        background: $primaryColor;
+        color: $bgColor;
+    }
+}
+
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: $secondColor;
+}
+
+
+
+
+
 @media(max-width:1058px) {
     header {
         padding: 16px 60px;
-        
+
     }
 
     section {
@@ -231,7 +351,7 @@ header {
 @media(max-width:991px) {
     header {
         padding: 16px 4%;
-        
+
     }
 
     section {
@@ -243,17 +363,17 @@ header {
     }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
     header {
         padding: 12px 4%;
-        
+
     }
 
-    #menu-icon{
+    #menu-icon {
         display: initial;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top: -570px;
         left: 0;
