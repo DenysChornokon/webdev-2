@@ -133,7 +133,8 @@ header.shadow{
     p {
         font-size: 0.938rem;
         color: $bgColor;
-        margin: 0.5rem 0 1.4rem;
+        margin: 2.5rem 0 1.4rem;
+        // background: ;
     }
 }
 
@@ -210,13 +211,42 @@ header.shadow{
     }
 }
 
-.products-container .box h3 {
+.products-container .box{
     h3 {
         font-size: 1rem;
         font-weight: 600;
         text-transform: uppercase;
-        border: 1px red solid;
     }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        span {
+            padding: 0 1rem;
+            color: $bgColor;
+            background: $primaryColor;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        a {
+            padding: 0 1rem;
+            color: $textColor;
+            border: 2px solid $primaryColor;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            background: $primaryColor;
+            color: $bgColor;
+            transition: .2 all linear;
+        }
+    }
+
+
 }
 
 .donators-container {
@@ -276,6 +306,10 @@ header.shadow{
     p {
         font-size: .938rem;
         margin-bottom: 10px;
+    }
+
+    a {
+        color: $textColor;
     }
 
     li a {
