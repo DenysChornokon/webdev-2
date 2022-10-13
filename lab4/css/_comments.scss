@@ -1,0 +1,35 @@
+.comments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .comment {
+        padding: 20px;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        text-align: left;
+
+        p {
+            font-size: 0.938rem;
+
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: .5rem 0 .5rem;
+            font: bold;
+
+            span {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .comment:hover {
+        background: $secondColor;
+        transition: .2s all linear;
+    }
+}
+

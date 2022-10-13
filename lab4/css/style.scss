@@ -1,0 +1,482 @@
+@import "utilities";
+@import "config";
+@import "comments";
+
+
+body {
+    color: $textColor;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: .5s linear;
+}
+
+header.shadow{
+    background: $textColor;
+    box-shadow: $box-shadow;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+
+
+    a {
+        padding: 8px 17px;
+        color: $bgColor;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    a:hover {
+        background: $primaryColor;
+        border-radius: 0.2rem;
+        transition: .2s all linear;
+    }
+
+}
+
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icon .fa-solid {
+    color: $bgColor;
+}
+
+.header-icon .fa-solid:hover {
+    color: $primaryColor;
+}
+
+#menu-icon {
+    color: $bgColor;
+    font-size: 24px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.search-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: $bgColor;
+    width: 100%;
+
+
+    input {
+        padding: 20px;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 1rem;
+        color: $primaryColor;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.search-box.active {
+    top: 110%;
+    box-shadow: $box-shadow;
+    transition: .2s all linear;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/Ukraine.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-text {
+
+    h1 {
+        font-size: 3.4rem;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 0.938rem;
+        color: $bgColor;
+        margin: 2.5rem 0 1.4rem;
+        // background: ;
+    }
+}
+
+.home-img img {
+    border-radius: 50px;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: $primaryColor;
+    color: $bgColor;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #8a6f4d;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.about-img img {
+    border-radius: 0.5rem;
+}
+
+.about-text {
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 0.938rem;
+        margin: 0.5rem 0 1.1rem;
+    }
+}
+
+.heading {
+    text-align: center;
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .box {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0.5rem;
+        box-shadow: $box-shadow;
+
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        object-position: center;
+        padding: 20px;
+        background: #f1f1f1;
+        border-radius: 0.5rem;
+
+    }
+}
+
+.products-container .box{
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        span {
+            padding: 0 1rem;
+            color: $bgColor;
+            background: $primaryColor;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        a {
+            padding: 0 1rem;
+            color: $textColor;
+            border: 2px solid $primaryColor;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            background: $primaryColor;
+            color: $bgColor;
+            transition: .2 all linear;
+        }
+    }
+
+
+}
+
+.donators-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .box {
+        padding: 20px;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        text-align: center;
+
+        p {
+            font-size: 0.938rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: .5rem 0 .5rem;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .box:hover {
+        background: $secondColor;
+        transition: .2s all linear;
+    }
+}
+
+.stars .fa-solid {
+    color: $primaryColor;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+
+.footer-box {
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: .938rem;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: $textColor;
+    }
+
+    li a {
+        color: $textColor;
+    }
+
+    li a:hover {
+        color: $primaryColor;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+
+    a .fa-brands {
+        font-size: 24px;
+        color: $textColor;
+        padding: 10px;
+        background: $secondColor;
+        border-radius: .2rem;
+    }
+
+    a .fa-brands:hover {
+        background: $primaryColor;
+        color: $bgColor;
+    }
+}
+
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: $secondColor;
+}
+
+
+
+
+
+@media(max-width:1058px) {
+    header {
+        padding: 16px 60px;
+
+    }
+
+    section {
+        padding: 50px 60px;
+    }
+
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 16px 4%;
+
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    header {
+        padding: 12px 4%;
+
+    }
+
+    #menu-icon {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: $secondColor;
+        row-gap: 1.5rem;
+        padding: 20px;
+        transition: 0.3s;
+        text-align: center;
+
+        a {
+            color: $textColor;
+        }
+
+        a:hover {
+            color: $bgColor;
+        }
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .about {
+        align-items: center;
+    }
+}
+
+@media(max-width:360px) {
+    header {
+        padding: 11px 4%;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    .home-text {
+        padding-top: 15px;
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+
+    .about-img {
+        order: 2;
+    }
+
+    .about-text {
+        text-align: center;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+    }
+}
