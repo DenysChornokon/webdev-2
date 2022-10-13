@@ -3,12 +3,14 @@
     grid-template-columns: repeat(auto-fit, minmax(390px, auto));
     gap: 1.5rem;
     margin-top: 2rem;
+    
 
-    .comment {
+    .output {
         padding: 20px;
         box-shadow: $box-shadow;
         border-radius: .5rem;
         text-align: left;
+        
 
         p {
             font-size: 0.938rem;
@@ -27,9 +29,10 @@
         }
     }
 
-    .comment:hover {
+    .output:hover {
         background: $secondColor;
         transition: .2s all linear;
     }
 }
+
 
