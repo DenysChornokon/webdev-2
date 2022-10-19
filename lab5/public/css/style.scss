@@ -1,1 +1,160 @@
-@import "config"
+@import "utilities";
+@import "config";
+@import "comments";
+@import "weather";
+
+
+body {
+    color: $textColor;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: .5s linear;
+}
+
+header.shadow{
+    background: $textColor;
+    box-shadow: $box-shadow;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+
+
+    a {
+        padding: 8px 17px;
+        color: $bgColor;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    a:hover {
+        background: $primaryColor;
+        border-radius: 0.2rem;
+        transition: .2s all linear;
+    }
+
+}
+
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+
+.header-icon .fa-solid {
+    color: $bgColor;
+}
+
+.header-icon .fa-solid:hover {
+    color: $primaryColor;
+}
+
+#menu-icon {
+    color: $bgColor;
+    font-size: 24px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../images/Ukraine.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-text {
+
+    h1 {
+        font-size: 3.4rem;
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 0.938rem;
+        color: $bgColor;
+        margin: 2.5rem 0 1.4rem;
+        // background: ;
+    }
+}
+
+.home-img img {
+    border-radius: 50px;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: $primaryColor;
+    color: $bgColor;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #8a6f4d;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.about-img img {
+    border-radius: 0.5rem;
+}
+
+.about-text {
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 0.938rem;
+        margin: 0.5rem 0 1.1rem;
+    }
+}
+
+.heading {
+    text-align: center;
+
+    h2 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+}
