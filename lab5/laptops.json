@@ -1,0 +1,47 @@
+{
+    "laptops": [
+      {
+        "id": "22 000₴",
+        "title": "ASUS VivoBook 17 X712EA-BX819",
+        "hdd": "8GB",
+        "link":"https://rozetka.com.ua/ua/asus-90nb0tw1-m00j10/p348163758/characteristics/",
+        "image_link":"1.jpg"
+      },
+      
+      {
+        "id": "38 000₴",
+        "title": "Acer Aspire 7 A715-42G-R0VS",
+        "hdd": "8GB",
+        "link":"https://rozetka.com.ua/ua/acer_nh_qbfeu_00a/p282286938/",
+        "image_link":""
+      },
+      {
+        "id": "42 999₴",
+        "title": "Apple MacBook Air 13",
+        "hdd": "8GB",
+        "link":"https://rozetka.com.ua/ua/apple_macbook_air_13_m1_256gb_2020_silver/p245161903/characteristics/",
+        "image_link":""
+      },
+      {
+        "id": "32 999₴",
+        "title": "Lenovo IdeaPad Gaming 3 15IHU6",
+        "hdd": "8GB",
+        "link":"https://rozetka.com.ua/ua/lenovo-82k101fjra/p350001258/",
+        "image_link":""
+      },
+      {
+        "id": "22 999₴",
+        "title": "ASUS Laptop X515EA-BQ2066",
+        "hdd": "12GB",
+        "link":"https://rozetka.com.ua/ua/asus-90nb0ty1-m00vf0/p346597995/",
+        "image_link":""
+      },
+      {
+        "id": "19 999₴",
+        "title": "Lenovo IdeaPad 3 15ALC6",
+        "hdd": "8Gb",
+        "link":"https://rozetka.com.ua/ua/lenovo-82ku00nera/p349992174/",
+        "image_link":""
+      }
+    ]
+  }
